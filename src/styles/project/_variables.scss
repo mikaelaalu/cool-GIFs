@@ -1,0 +1,9 @@
+// In this file you can keep all your Sass variables.
+$purple: rgb(151, 40, 151);
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+

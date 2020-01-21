@@ -1,0 +1,22 @@
+// In this file you put all styles related to typography such as p, a, h1, etc.
+
+body {
+    @extend %center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    @extend %center;
+
+    &__logo {
+        width: 80%;
+        height: 40%;
+
+    }
+}
+
+.footer {
+    @extend %center;
+}
