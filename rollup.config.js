@@ -19,6 +19,8 @@ import commonjs from "@rollup/plugin-commonjs";
 
 import filesize from "rollup-plugin-filesize";
 
+import injectEnv from "rollup-plugin-inject-env";
+
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = isProduction === false;
 
@@ -30,6 +32,11 @@ export default {
   },
 
   plugins: [
+    injectEnv({
+      // include: "include/sources/minimatch",
+      // exclude: "exclude/sources/minimatch",
+      // envFilePath: "path/to/.env",
+    }),
     commonjs(),
     babel(),
     resolve(),
